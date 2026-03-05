@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gentry | Premium Haircuts & Grooming</title>
+    <meta name="description" content="Experience the best skin fades and beard grooming at The Gentry. Book your appointment online today. Best barber near you.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+        .bg-gold { background-color: #C5A059; }
+        .text-gold { color: #C5A059; }
+        .border-gold { border-color: #C5A059; }
+        .btn-hover:hover { background-color: #A38445; transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <nav class="sticky top-0 z-50 bg-black/95 border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">THE <span class="text-gold">GENTRY</span></div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+            <a href="#home" class="hover:text-gold">Home</a>
+            <a href="#services" class="hover:text-gold">Services</a>
+            <a href="#booking" class="hover:text-gold">Book Now</a>
+            <a href="#gallery" class="hover:text-gold">Gallery</a>
+            <a href="#contact" class="hover:text-gold">Contact</a>
+        </div>
+        <button class="md:hidden text-white" id="menu-btn">
+            <i data-lucide="menu"></i>
+        </button>
+    </nav>
+
+    <section id="home" class="relative h-[90vh] flex items-center justify-center text-center px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=2000" class="absolute inset-0 w-full h-full object-cover" alt="Barbershop Interior">
+        
+        <div class="relative z-20 max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Premium Haircuts <br>& Grooming</h1>
+            <p class="text-gray-300 text-lg mb-8 max-w-lg mx-auto">Mastering the craft of traditional barbering with a modern touch. Your style, our precision.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#booking" class="bg-gold text-black px-8 py-4 font-bold uppercase btn-hover">Book Appointment</a>
+                <a href="https://wa.me/1234567890" class="border border-white px-8 py-4 font-bold uppercase hover:bg-white hover:text-black transition">WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold">Our Services</h2>
+            <div class="h-1 w-20 bg-gold mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 p-8 border-l-4 border-gold">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Skin Fade</h3>
+                    <span class="text-gold font-bold">$35</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Precision fade with foil finish. Includes styling and neck shave.</p>
+                <span class="text-xs text-gray-500 uppercase tracking-widest">45 Minutes</span>
+            </div>
+
+            <div class="bg-zinc-900 p-8 border-l-4 border-gold">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">Beard Sculpt</h3>
+                    <span class="text-gold font-bold">$25</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Shape, trim, and straight razor line-up with hot towel treatment.</p>
+                <span class="text-xs text-gray-500 uppercase tracking-widest">30 Minutes</span>
+            </div>
+
+            <div class="bg-zinc-900 p-8 border-l-4 border-gold">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold">The Full Ritual</h3>
+                    <span class="text-gold font-bold">$55</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Signature haircut + Beard groom + Charcoal mask facial.</p>
+                <span class="text-xs text-gray-500 uppercase tracking-widest">75 Minutes</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-20 bg-zinc-900 px-6">
+        <div class="max-w-4xl mx-auto bg-black p-8 md:p-12 rounded-lg border border-gray-800">
+            <h2 class="text-3xl font-bold mb-8 text-center">Secure Your Chair</h2>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2">Select Service</label>
+                    <select class="w-full bg-zinc-900 border border-gray-700 p-3 focus:border-gold outline-none">
+                        <option>Skin Fade</option>
+                        <option>Classic Cut</option>
+                        <option>Beard Grooming</option>
+                        <option>The Full Ritual</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2">Choose Barber</label>
+                    <select class="w-full bg-zinc-900 border border-gray-700 p-3 focus:border-gold outline-none">
+                        <option>Any Barber</option>
+                        <option>Marcus (Master Barber)</option>
+                        <option>Leo (Fade Specialist)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2">Date</label>
+                    <input type="date" class="w-full bg-zinc-900 border border-gray-700 p-3 focus:border-gold outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-400 mb-2">Time Slot</label>
+                    <input type="time" class="w-full bg-zinc-900 border border-gray-700 p-3 focus:border-gold outline-none">
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" class="w-full bg-gold text-black font-bold py-4 uppercase tracking-widest btn-hover">Confirm Booking</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Our Craft</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-7xl mx-auto">
+            <img src="https://images.unsplash.com/photo-1621605815841-aa88c80b00d4?auto=format&fit=crop&q=80&w=600" class="aspect-square object-cover" alt="Fade Cut">
+            <img src="https://images.unsplash.com/photo-1599351431247-f13277876020?auto=format&fit=crop&q=80&w=600" class="aspect-square object-cover" alt="Beard Grooming">
+            <img src="https://images.unsplash.com/photo-1512690196236-d5a743f199bb?auto=format&fit=crop&q=80&w=600" class="aspect-square object-cover" alt="Barber Tools">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=600" class="aspect-square object-cover" alt="Modern Cut">
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 bg-zinc-900">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Visit Us</h2>
+                <p class="text-gray-400 mb-8">Located in the heart of the city, we provide an atmosphere where you can relax and refine your look.</p>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center gap-4">
+                        <i data-lucide="map-pin" class="text-gold"></i>
+                        <span>123 Grooming St, Downtown, Cityville</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i data-lucide="phone" class="text-gold"></i>
+                        <a href="tel:1234567890" class="hover:text-gold">+1 (234) 567-890</a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Opening Hours</h3>
+                <div class="grid grid-cols-2 text-sm text-gray-400 gap-2">
+                    <span>Mon - Fri</span><span>9:00 AM - 8:00 PM</span>
+                    <span>Saturday</span><span>10:00 AM - 6:00 PM</span>
+                    <span>Sunday</span><span class="text-gold">Closed</span>
+                </div>
+            </div>
+            <div class="h-80 bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937611493!2d-73.98731968459391!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-gray-800 py-12 px-6 text-center">
+        <div class="text-2xl font-bold tracking-tighter mb-6">THE <span class="text-gold">GENTRY</span></div>
+        <div class="flex justify-center space-x-6 mb-8">
+            <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter"></i></a>
+        </div>
+        <p class="text-gray-500 text-xs uppercase tracking-widest">&copy; 2026 The Gentry Barbershop. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="fixed bottom-6 right-6 bg-green-600 p-4 rounded-full shadow-lg z-50 hover:scale-110 transition">
+        <i data-lucide="message-circle" class="text-white"></i>
+    </a>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle (Simplified)
+        const menuBtn = document.getElementById('menu-btn');
+        menuBtn.addEventListener('click', () => {
+            alert('Navigation Drawer logic goes here for mobile!');
+        });
+    </script>
+</body>
+</html>
